@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Autend Next Starter",
-  description: "Starter com Next.js, TypeScript, Tailwind, PostgreSQL e Redis",
+  title: "AjudaAI Auth",
+  description: "Tela de login e cadastro responsiva para o painel AjudaAI",
 };
 
 export default function RootLayout({
