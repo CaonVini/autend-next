@@ -1,5 +1,19 @@
-import { LoginPage } from "@/src/pages/LoginPage";
+import { LoginPage } from "@/src/features/auth/pages/LoginPage";
 
-export default function Home() {
-  return <LoginPage />;
+type HomePageProps = {
+  searchParams: Promise<{
+    auth?: string;
+    email?: string;
+  }>;
+};
+
+export default async function Home({ searchParams }: HomePageProps) {
+  const resolvedSearchParams = await searchParams;
+
+  return (
+    <LoginPage
+      authStatus={resolvedSearchParams.auth}
+      pendingVerificationEmail={resolvedSearchParams.email}
+    />
+  );
 }
