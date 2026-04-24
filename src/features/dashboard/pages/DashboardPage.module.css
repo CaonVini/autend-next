@@ -1,0 +1,451 @@
+.page {
+  min-height: 100vh;
+  background: #f5f5f4;
+  color: #111827;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.shell {
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 304px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px 24px;
+  background:
+    linear-gradient(180deg, #072d23 0%, #0b3528 48%, #0f3d2e 100%);
+  color: #f3f8f4;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 12px 0;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #147245 0%, #0d6038 100%);
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.logoIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.logoText {
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 64px;
+}
+
+.navItem {
+  height: 62px;
+  border: 0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 18px;
+  background: transparent;
+  color: rgba(248, 253, 249, 0.94);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.navItemActive {
+  background: rgba(23, 84, 56, 0.9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.navItemActive:hover {
+  background: rgba(25, 92, 61, 0.92);
+}
+
+.navIcon {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.userCard {
+  width: 100%;
+  margin-top: auto;
+  padding: 8px 4px 8px 4px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: #edf6ee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.userCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #14824b 0%, #0f6d40 100%);
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.userCopy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.userName {
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: #f7fbf8;
+  white-space: nowrap;
+}
+
+.userEmail {
+  font-size: 11px;
+  line-height: 1.1;
+  color: rgba(208, 221, 213, 0.78);
+  white-space: nowrap;
+}
+
+.userCard svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: rgba(212, 223, 216, 0.86);
+}
+
+.mainContent {
+  min-height: 100vh;
+  margin-left: 304px;
+  padding: 56px 40px 40px 56px;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f4;
+}
+
+.topBar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.intro {
+  padding-top: 2px;
+}
+
+.greeting {
+  margin: 0;
+  color: #123a2d;
+  font-size: 43px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  color: #708087;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.searchField {
+  width: 374px;
+  height: 58px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 20px;
+  background: #ffffff;
+  border: 1px solid #ece9e3;
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.02);
+}
+
+.searchField svg {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  color: #869295;
+}
+
+.searchField input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #374151;
+  font-size: 16px;
+  line-height: 1;
+  outline: none;
+}
+
+.searchField input::placeholder {
+  color: #8a9598;
+  opacity: 1;
+}
+
+.notificationsButton {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #ece9e3;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #7d878c;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.02);
+}
+
+.notificationsButton:hover {
+  background: #fcfcfb;
+  color: #68747a;
+}
+
+.notificationsButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.notificationDot {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  background: #13884f;
+}
+
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px 132px;
+  text-align: center;
+}
+
+.emptyStateIcon {
+  width: 138px;
+  height: 126px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #e8f1e3 0%, #dce9d7 100%);
+  color: #0f6a41;
+}
+
+.emptyStateIcon svg {
+  width: 56px;
+  height: 56px;
+}
+
+.emptyStateTitle {
+  margin: 24px 0 0;
+  color: #15392e;
+  font-size: 31px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+.emptyStateSubtitle {
+  width: min(440px, 100%);
+  margin: 18px 0 0;
+  color: #748288;
+  font-size: 17px;
+  line-height: 1.72;
+  font-weight: 400;
+}
+
+.loadingShell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f5f5f4;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.loadingBadge {
+  border: 1px solid #ece9e3;
+  border-radius: 999px;
+  padding: 14px 20px;
+  background: #ffffff;
+  color: #66757c;
+  font-size: 14px;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    position: static;
+    width: auto;
+    min-height: auto;
+    gap: 24px;
+  }
+
+  .logoRow {
+    padding: 8px 4px 0;
+  }
+
+  .nav {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .userCard {
+    margin-top: 0;
+  }
+
+  .mainContent {
+    min-height: auto;
+    margin-left: 0;
+    padding: 32px 20px 40px;
+  }
+
+  .topBar {
+    flex-direction: column;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .searchField {
+    width: 100%;
+  }
+
+  .emptyState {
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    padding: 20px 16px 16px;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+  }
+
+  .navItem {
+    font-size: 17px;
+  }
+
+  .mainContent {
+    padding: 24px 16px 32px;
+  }
+
+  .greeting {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .notificationsButton {
+    align-self: flex-end;
+  }
+
+  .emptyStateIcon {
+    width: 120px;
+    height: 112px;
+  }
+
+  .emptyStateTitle {
+    font-size: 27px;
+  }
+
+  .emptyStateSubtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
